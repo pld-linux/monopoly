@@ -2,7 +2,7 @@ Summary:	Monopoly
 Summary(pl):	Monopoly
 Name:		monopoly
 Version:	1.6.5
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Networking
 Group(de):	Applikationen/Netzwerkwesen
@@ -45,6 +45,7 @@ configurable et très confortable d'utilisation.
 %setup -q
 
 %build
+autoconf
 %configure
 %{__make}
 
