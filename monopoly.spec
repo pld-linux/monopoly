@@ -1,5 +1,5 @@
-Summary:	Monopoly
-Summary(pl):	Monopoly
+Summary:	Monopoly - a program for counting ppp (but not only) connections
+Summary(pl):	Monopoly program zliczaj±cy po³±czenia ppp (ale nie tylko)
 Name:		monopoly
 Version:	1.6.5
 Release:	2
@@ -9,9 +9,11 @@ Group(de):	Applikationen/Netzwerkwesen
 Group(pl):	Aplikacje/Sieciowe
 Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 URL:		http://dione.ids.pl/~yossa/monopoly/
-Requires:	ppp
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	slang-devel >= 1.0
 BuildRequires:	zlib-devel
+Requires:	ppp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
@@ -45,7 +47,10 @@ configurable et très confortable d'utilisation.
 %setup -q
 
 %build
+rm -f missing
+aclocal -I macros
 autoconf
+automake -a -c
 %configure
 %{__make}
 
