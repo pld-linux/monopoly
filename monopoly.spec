@@ -1,17 +1,16 @@
 Summary:   	Monopoly
 Summary(pl): 	Monopoly
 Name:      	monopoly
-Version:   	1.5.7
+Version:   	1.6.0
 Release:   	1
 Copyright:      GPL
 Group:          Applications/Networking
 Group(pl):      Aplikacje/Sieciowe
 Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
-Patch:		monopoly-makefile.patch
 BuildRequires:	ncurses-devel
 BuildRoot: 	/tmp/%{name}-%{version}-root
 
-%define	_sysconfdir	/etc
+%define		_sysconfdir	/etc
 
 %description
 Monopoly - a program for counting ppp (but not only) connections. It uses
@@ -30,30 +29,32 @@ pe³ni konfigurowalne i bardzo wygodne.
 
 %prep
 %setup -q
-%patch -p0
 
 %build
-make monopoly \
-	CFLAGS="$RPM_OPT_FLAGS -I/usr/include/ncurses" \
-	CFGFILE="%{_sysconfdir}/monopolyrc"
+LDFLAGS="-s" ; export LDFLAGS
+%configure
+
+make 
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-make install \
-	DESTDIR=$RPM_BUILD_ROOT \
-	BINDIR=%{_bindir} \
-	CFGDIR=%{_sysconfdir}
+make install DESTDIR=$RPM_BUILD_ROOT 
 	
-gzip -9nf doc/{CHANGES,README,TODO,TROUBLES,pl/*} 
+gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
+	doc/{CHANGES,README,TODO,TROUBLES,pl/*} 
+
+%find_lang %{name}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755) 
 %doc doc/{CHANGES,README,TODO,TROUBLES}.gz
 %lang(pl) %doc doc/pl
 
 %attr(755,root,root) %{_bindir}/*
-%config %{_sysconfdir}/monopolyrc
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/monopolyrc
+
+%{_mandir}/man1/monopoly.1.gz
