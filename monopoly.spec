@@ -7,6 +7,7 @@ Copyright:      GPL
 Group:          Applications/Networking
 Group(pl):      Aplikacje/Sieciowe
 Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
+URL:    	http://dione.ids.pl/~yossa/monopoly/
 Requires:	ppp
 BuildRequires:	ncurses-devel >= 5.0
 BuildRoot: 	/tmp/%{name}-%{version}-root
