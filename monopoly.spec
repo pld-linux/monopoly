@@ -57,14 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 
 %attr(755,root,root) %{_bindir}/*
 %config %{_sysconfdir}/monopolyrc
-
-%changelog
-* Sat Jul 03 1999 Piotr Czerwiñski <pius@pld.org.pl> 
-  [1.5.6-1]
-- updated to 1.5.6,
-- added monopoly-makefile.patch,
-- some cleanups.
-
-* Fri Oct 16 1998 Piotr Grochowski <pager@dione.ids.pl>
-  [1.5.4-1]
-- first relase as PLD package.
