@@ -47,8 +47,8 @@ configurable et très confortable d'utilisation.
 %build
 rm -f missing
 aclocal -I macros
-autoconf
-automake -a -c -f
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
