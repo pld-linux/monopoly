@@ -16,8 +16,6 @@ BuildRequires:	zlib-devel
 Requires:	ppp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_sysconfdir	/etc
-
 %description
 Monopoly - a program for counting ppp (but not only) connections. It
 uses system logs to create its own log file. It can be used from
@@ -57,7 +55,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
