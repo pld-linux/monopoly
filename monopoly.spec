@@ -5,9 +5,10 @@ Version:	1.6.5
 Release:	2
 License:	GPL
 Group:		Applications/Networking
-Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
-# Source0-md5:	babf7628075cda9f062bc30f9d4ae485
-URL:		http://dione.ids.pl/~yossa/monopoly/
+#Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	ec354f580d979d2b2732c19712cdce11
+#URL:		http://dione.ids.pl/~yossa/monopoly/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	slang-devel >= 1.0
