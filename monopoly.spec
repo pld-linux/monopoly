@@ -55,9 +55,9 @@ automake -a -c
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT 
-	
-gzip -9nf doc/{CHANGES,README,TODO,TROUBLES,pl/*} 
+%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+gzip -9nf doc/{CHANGES,README,TODO,TROUBLES,pl/*}
 
 %find_lang %{name}
 
