@@ -5,8 +5,6 @@ Version:	1.6.5
 Release:	2
 License:	GPL
 Group:		Applications/Networking
-Group(de):	Applikationen/Netzwerkwesen
-Group(pl):	Aplikacje/Sieciowe
 Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 URL:		http://dione.ids.pl/~yossa/monopoly/
 BuildRequires:	autoconf
