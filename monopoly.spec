@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/Networking
 Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
+# Source0-md5:	babf7628075cda9f062bc30f9d4ae485
 URL:		http://dione.ids.pl/~yossa/monopoly/
 BuildRequires:	autoconf
 BuildRequires:	automake
