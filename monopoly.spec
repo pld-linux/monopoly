@@ -8,7 +8,7 @@ Group:          Applications/Networking
 Group(pl):      Aplikacje/Sieciowe
 Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 Patch:		monopoly-makefile.patch
-BuildPrereq:	ncurses-devel
+BuildRequires:	ncurses-devel
 BuildRoot: 	/tmp/%{name}-%{version}-root
 
 %define	_sysconfdir	/etc
