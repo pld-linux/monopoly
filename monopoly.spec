@@ -9,9 +9,9 @@ Group(pl):      Aplikacje/Sieciowe
 Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 Patch:		monopoly-makefile.patch
 BuildPrereq:	ncurses-devel
-BuildRoot: 	/var/tmp/%{name}-%{version}-root
+BuildRoot: 	/tmp/%{name}-%{version}-root
 
-%define	_sysconfdir	/etc
+%define		_sysconfdir	/etc
 
 %description
 Monopoly - a program for counting ppp (but not only) connections. It uses
@@ -25,7 +25,7 @@ Monopoly - program zliczaj±cy po³±czenia ppp (ale nie tylko). U¿ywa logów
 systemowych, aby stworzyæ swój w³asny plik z histori± po³±czeñ. Mo¿e byæ
 u¿ywany z linii poleceñ do pokazywania dziennych, miesiêcznych i rocznych
 statystyk. Posiada tak¿e interfejs u¿ytkownika (w ncurses). Pokazuje datê,
-czas, d³ugo¶æ, koszt oraz predko¶æ ka¿dego po³±czenia. Monopoly jest w
+czas, d³ugo¶æ, koszt oraz prêdko¶æ ka¿dego po³±czenia. Monopoly jest w
 pe³ni konfigurowalne i bardzo wygodne.
 
 %prep
