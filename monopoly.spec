@@ -2,12 +2,12 @@ Summary:   	Monopoly
 Summary(pl): 	Monopoly
 Name:      	monopoly
 Version:   	1.6.1
-Release:   	1
+Release:   	2
 Copyright:      GPL
 Group:          Applications/Networking
 Group(pl):      Aplikacje/Sieciowe
 Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
-BuildRequires:	ncurses-devel
+BuildRequires:	ncurses-devel >= 5.0
 BuildRoot: 	/tmp/%{name}-%{version}-root
 
 %define		_sysconfdir	/etc
