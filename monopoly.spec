@@ -10,7 +10,7 @@ Source:    	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 URL:    	http://dione.ids.pl/~yossa/monopoly/
 Requires:	ppp
 BuildRequires:	ncurses-devel >= 5.0
-BuildRoot: 	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_sysconfdir	/etc
 
