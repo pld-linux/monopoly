@@ -57,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/monopolyrc
 
-%{_mandir}/man1/monopoly.1.gz
+#%{_mandir}/man1/monopoly.1.gz
