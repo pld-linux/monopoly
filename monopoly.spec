@@ -1,7 +1,7 @@
 Summary:   	Monopoly
 Summary(pl): 	Monopoly
 Name:      	monopoly
-Version:   	1.5.6
+Version:   	1.5.7
 Release:   	1
 Copyright:      GPL
 Group:          Applications/Networking
@@ -11,7 +11,7 @@ Patch:		monopoly-makefile.patch
 BuildPrereq:	ncurses-devel
 BuildRoot: 	/tmp/%{name}-%{version}-root
 
-%define		_sysconfdir	/etc
+%define	_sysconfdir	/etc
 
 %description
 Monopoly - a program for counting ppp (but not only) connections. It uses
