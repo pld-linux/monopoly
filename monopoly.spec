@@ -1,7 +1,7 @@
 Summary:   	Monopoly
 Summary(pl): 	Monopoly
 Name:      	monopoly
-Version:   	1.6.3
+Version:   	1.6.5
 Release:   	1
 Copyright:      GPL
 Group:          Applications/Networking
@@ -30,6 +30,14 @@ statystyk. Posiada tak¿e interfejs u¿ytkownika (w ncurses). Pokazuje datê,
 czas, d³ugo¶æ, koszt oraz prêdko¶æ ka¿dego po³±czenia. Monopoly jest w
 pe³ni konfigurowalne i bardzo wygodne.
 
+%description -l fr
+Monopoly - un programme pour compter (mais pas seulement) les connexions. Il
+utilise les logs systèmes pour créer son propre fichier log. Il peut etre
+utilisé depuis la ligne de commande pour montrer les statistiques du jours, du
+mois et de l'année. Il a aussi une interface ncurses - Visual Monopoly. Elle
+montre le temps, la date, la durée, le cout et la vitesse de chaque connexion.
+Monopoly est entièrement configurable et très confortable d'utilisation.
+
 %prep
 %setup -q
 
@@ -37,7 +45,7 @@ pe³ni konfigurowalne i bardzo wygodne.
 LDFLAGS="-s" ; export LDFLAGS
 %configure
 
-%{__make} 
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
