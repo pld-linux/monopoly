@@ -2,15 +2,18 @@ Summary:	Monopoly - a program for counting ppp (but not only) connections
 Summary(pl):	Monopoly program zliczaj±cy po³±czenia ppp (ale nie tylko)
 Name:		monopoly
 Version:	1.6.5
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Networking
 #Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	ec354f580d979d2b2732c19712cdce11
+Patch0:		%{name}-po.patch
 #URL:		http://dione.ids.pl/~yossa/monopoly/
+#URL:		http://www.monopoly.ko.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	slang-devel >= 1.0
 BuildRequires:	zlib-devel
 Requires:	ppp
@@ -43,11 +46,12 @@ configurable et très confortable d'utilisation.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-rm -f missing
 %{__aclocal} -I macros
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
@@ -65,7 +69,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc doc/{CHANGES,README,TODO,TROUBLES/*}
+%doc doc/{CHANGES,README,TODO,TROUBLES}
 %lang(pl) %doc doc/pl
 
 %attr(755,root,root) %{_bindir}/*
