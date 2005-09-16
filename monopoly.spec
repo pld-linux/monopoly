@@ -2,7 +2,7 @@ Summary:	Monopoly - a program for counting ppp (but not only) connections
 Summary(pl):	Monopoly program zliczaj±cy po³±czenia ppp (ale nie tylko)
 Name:		monopoly
 Version:	1.6.5
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/Networking
 #Source0:	http://dione.ids.pl/~yossa/monopoly/%{name}-%{version}.tar.gz
@@ -14,7 +14,7 @@ Patch0:		%{name}-po.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gettext-devel
-BuildRequires:	slang-devel >= 1.0
+BuildRequires:	slang-devel >= 2.0.0
 BuildRequires:	zlib-devel
 Requires:	ppp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
