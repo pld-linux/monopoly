@@ -73,6 +73,6 @@ rm -rf $RPM_BUILD_ROOT
 %lang(pl) %doc doc/pl
 
 %attr(755,root,root) %{_bindir}/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/monopolyrc
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/monopolyrc
 
 %{_mandir}/man1/*
