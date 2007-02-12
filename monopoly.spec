@@ -1,5 +1,5 @@
 Summary:	Monopoly - a program for counting ppp (but not only) connections
-Summary(pl):	Monopoly program zliczaj±cy po³±czenia ppp (ale nie tylko)
+Summary(pl.UTF-8):   Monopoly program zliczajÄ…cy poÅ‚Ä…czenia ppp (ale nie tylko)
 Name:		monopoly
 Version:	1.6.5
 Release:	4
@@ -27,22 +27,22 @@ ncurses interface - Visual Monopoly. It shows time, date, duration,
 cost and speed of every connection. Monopoly is fully configurable and
 very comfortable.
 
-%description -l pl
-Monopoly - program zliczaj±cy po³±czenia ppp (ale nie tylko). U¿ywa
-logów systemowych, aby stworzyæ swój w³asny plik z histori± po³±czeñ.
-Mo¿e byæ u¿ywany z linii poleceñ do pokazywania dziennych,
-miesiêcznych i rocznych statystyk. Posiada tak¿e interfejs u¿ytkownika
-(w ncurses). Pokazuje datê, czas, d³ugo¶æ, koszt oraz prêdko¶æ ka¿dego
-po³±czenia. Monopoly jest w pe³ni konfigurowalne i bardzo wygodne.
+%description -l pl.UTF-8
+Monopoly - program zliczajÄ…cy poÅ‚Ä…czenia ppp (ale nie tylko). UÅ¼ywa
+logÃ³w systemowych, aby stworzyÄ‡ swÃ³j wÅ‚asny plik z historiÄ… poÅ‚Ä…czeÅ„.
+MoÅ¼e byÄ‡ uÅ¼ywany z linii poleceÅ„ do pokazywania dziennych,
+miesiÄ™cznych i rocznych statystyk. Posiada takÅ¼e interfejs uÅ¼ytkownika
+(w ncurses). Pokazuje datÄ™, czas, dÅ‚ugoÅ›Ä‡, koszt oraz prÄ™dkoÅ›Ä‡ kaÅ¼dego
+poÅ‚Ä…czenia. Monopoly jest w peÅ‚ni konfigurowalne i bardzo wygodne.
 
-%description -l fr
+%description -l fr.UTF-8
 Monopoly - un programme pour compter (mais pas seulement) les
-connexions. Il utilise les logs systèmes pour créer son propre fichier
-log. Il peut etre utilisé depuis la ligne de commande pour montrer les
-statistiques du jours, du mois et de l'année. Il a aussi une interface
-ncurses - Visual Monopoly. Elle montre le temps, la date, la durée, le
-cout et la vitesse de chaque connexion. Monopoly est entièrement
-configurable et très confortable d'utilisation.
+connexions. Il utilise les logs systÃ¨mes pour crÃ©er son propre fichier
+log. Il peut etre utilisÃ© depuis la ligne de commande pour montrer les
+statistiques du jours, du mois et de l'annÃ©e. Il a aussi une interface
+ncurses - Visual Monopoly. Elle montre le temps, la date, la durÃ©e, le
+cout et la vitesse de chaque connexion. Monopoly est entiÃ¨rement
+configurable et trÃ¨s confortable d'utilisation.
 
 %prep
 %setup -q
