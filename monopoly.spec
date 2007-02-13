@@ -1,5 +1,5 @@
 Summary:	Monopoly - a program for counting ppp (but not only) connections
-Summary(pl.UTF-8):   Monopoly program zliczający połączenia ppp (ale nie tylko)
+Summary(pl.UTF-8):	Monopoly program zliczający połączenia ppp (ale nie tylko)
 Name:		monopoly
 Version:	1.6.5
 Release:	4
