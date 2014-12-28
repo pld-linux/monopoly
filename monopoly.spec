@@ -13,7 +13,7 @@ Patch0:		%{name}-po.patch
 #URL:		http://www.monopoly.ko.pl/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	slang-devel >= 2.0.0
 BuildRequires:	zlib-devel
 Requires:	ppp
